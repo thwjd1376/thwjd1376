@@ -1,0 +1,21 @@
+/* 폰트
+기본 고딕
+font-family: 'Noto Serif KR', serif;
+명조
+font-family: 'Nanum Gothic', sans-serif; */
+/* main color #75786d(연한카키 ) */
+/* #ccc(그레이) , #f0ebe5(아이보리), #20231c (짙은카키)*/
+.clearfix::after{display: block;content: "";clear: both;}
+ul,li,ol{list-style: none;}
+a{text-decoration: none;color: black;}
+body,header,section,nav,aside,footer,address,div,span,img,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,a,figure,figcaption{
+    margin:0;
+    padding:0;
+    border:none;
+    box-sizing:border-box;
+}
+form,button,input,select,option{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
