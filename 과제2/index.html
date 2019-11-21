@@ -12,11 +12,9 @@
     <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Noto+Serif+KR:200,300,400,500,600,700,900&display=swap&subset=korean" rel="stylesheet">
     <!-- =====스크립트 -->
     <script src="js/jquery.min.js"></script>
-  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 
-  <script>
-  
-  </script>
+
     <!-- ====스타일 -->
     <link rel="stylesheet" href="css/reset.css">
     <style>
@@ -25,19 +23,23 @@
         .header_top>ul>li:last-child{float: right;color:#75786d;font-size:12px;font-weight: bold;background: #f0ebe5;border-radius: 5px;padding: 5px 14px;}
         .header_bottom{padding:15px;}
         .header_bottom>.logo{float: left;width: 43.73333333333333%;}
-        .header_bottom>.logo>img{width: 100%;}
+        .header_bottom>.logo>a>img{width: 100%;}
         .header_bottom>.nav>#header_menu{display: none;}
-        .header_bottom>.nav>#tgl_btn{float: right;}
-        .header_bottom>.nav>#tgl_btn>li{height: 2px;width: 30px;background: #20231c;margin: 5px 15px 0px;text-indent: -99999px;}
+        .header_bottom>.nav>#tgl_btn{float: right;cursor: pointer;}
+        .header_bottom>.nav>#tgl_btn>li{height: 2px;width: 30px;background:#20231c;margin: 8px 15px 8px 0px;text-indent: -99999px;}
+        .header_bottom>.nav>#tgl_btn>li:first-child{margin-top: 0;}
+        .header_bottom>.nav>#tgl_btn>li:last-child{margin-bottom: 0;}
         #banner{position: relative;}
         #banner img:first-child{width: 100%;height:300px;vertical-align: bottom;overflow: hidden;}
         #banner img:last-child{width: 30.4%;z-index: 100;position: absolute;left:50%;top:50%;transform: translate(-50%,-50%);}
-        #banner>div:last-child{background: #20231c;color: white;text-align: center;padding: 5px 0;font-size:14px;}
+        #banner>div:last-child{background: #20231c;text-align: center;padding: 5px 0;font-size:14px;}
+        #banner>div:last-child>a{color: white;}
         section{font-family: 'Noto Serif KR', serif;}
         section.notice{width: 91.73333333333333%;margin: 0 auto;padding-top: 22px;}
         section.notice>h2{font-size:14px;color: #20231c;text-align: center;padding-bottom: 10px;}
         section.notice>ul{border-top: 1px solid #20231c;}
         section.notice>ul>li{border-bottom:1px dashed #ccc;}
+        section.notice>ul>li:last-child{border-bottom: none;}
         section.notice>ul>li>p{font-size: 12px;color: #20231c;}
         section.notice>ul>li>p:first-child{float: left;padding:10px 20px;}
         section.notice>ul>li>p:last-child{float:right;padding:10px 20px 10px 0;}
@@ -46,13 +48,13 @@
         section.sns>h2{font-size:14px;color: #20231c;text-align: center;padding-bottom: 10px;}
         section.sns>ul{border-top: 1px solid #20231c;text-align: center;padding: 22px 0;}
         section.sns>ul>li{width:30.57777777777778%;display: inline-block;}
-        section.sns>ul>li>img{width: 20%;float: left;padding: 2%;}
-        section.sns>ul>li>p{font-size: 12px;color: #20231c;width:70%;float: right;}
+        section.sns>ul>li>a>img{width: 20%;float: left;padding: 2%;}
+        section.sns>ul>li>a>p{font-size: 12px;color: #20231c;width:70%;float: right;}
 
         footer.footer{background: #75786d;width: 100%;padding: 10px 0;}
         footer.footer>div{text-align: center;}
         footer.footer>div:last-child{padding-top:4px;}
-        footer.footer>div>img{width: 35%;}
+        footer.footer>div>a>img{width: 35%;}
         footer.footer>div>p{font-size: 12px;color: #20231c;}
         
     </style>
@@ -67,7 +69,7 @@
                 </ul>
             </div>
             <div class="header_bottom clearfix">
-                <div class="logo"><img src="images/logo_title.svg" alt="로고"></div>
+                <div class="logo"><a href="index.html"><img src="images/logo_title.svg" alt="로고"></a></div>
                 <nav class="nav ">
                     <ul id="header_menu">
                         <li><a href="#">향수찾기</a></li>
@@ -90,25 +92,25 @@
                 <img src="images/banner03.jpg" alt="로고01">
                 <img src="images/banner04.png" alt="로고01"> -->
 
-                <img src="images/logo.svg" alt="로고03">
+                <img src="images/logo_w.svg" alt="로고03">
             </div>
-            <div>내가 찾던 그 향수 찾기</div>
+            <div><a href="#">내가 찾던 그 향수 찾기</a></div>
         </section>
         
         <section class="notice">
             <h2 >NOTICE</h2>
             <ul class="clearfix">
-                <li>
+                <li class="clearfix">
                     <p><a href="#">교환 및 반품 규정 안내</a></p>
-                    <p><a href="#">19-10-20</a></p>
+                    <p>19-10-20</p>
                 </li>
-                <li>
+                <li class="clearfix">
                     <p><a href="#">쿠폰/마일리지 사용 안내</a></p>
-                    <p><a href="#">19-09-30</a></p>
+                    <p>19-09-30</p>
                 </li>
-                <li>
+                <li class="clearfix">
                     <p><a href="#">[EVENT]30ml 향수 구매시 5ml 공병 증정</a></p>
-                    <p><a href="#">19-09-15</a></p>
+                    <p>19-09-15</p>
                 </li>
             </ul>
         </section>
@@ -116,22 +118,30 @@
             <h2>SNS</h2>
             <ul>
                 <li class="clearfix">
-                    <img src="images/icon01.png" alt="카카오톡">
-                    <p>Kakao Talk</p>
+                    <a href="#">
+                        <img src="images/icon01.png" alt="카카오톡">
+                        <p>Kakao Talk</p>
+                    </a>
                 </li>
                 <li class="clearfix">
-                    <img src="images/icon02.png" alt="페이스북">
-                    <p>Facebook</p>
+                    <a href="#">
+                        <img src="images/icon02.png" alt="페이스북">
+                        <p>Facebook</p>
+                    </a>
                 </li>
                 <li class="clearfix">
-                    <img src="images/icon03.png" alt="인스타그램">
-                    <p>Instagram</p>
+                    <a href="#">
+                        <img src="images/icon03.png" alt="인스타그램">
+                        <p>Instagram</p>
+                    </a>
                 </li>
             </ul>
         </section>
         <footer class="footer">
            <div>
-               <img src="images/logo_title_w.svg" alt="로고02">
+                <a href="index.html">
+                    <img src="images/logo_title_w.svg" alt="로고02">
+                </a>
            </div>
            <div>
                <p>서울시 관악구 신림로64길<br>
