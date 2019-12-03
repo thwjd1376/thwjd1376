@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LIKE A FAIRY</title>
+    <!-- ====파비콘 -->
+    <link rel="shortcut icon" href="images/favicon01.png">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon01.png">
+    <!-- ====폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Noto+Serif+KR:200,300,400,500,600,700,900&display=swap&subset=korean" rel="stylesheet">
+    <!-- =====스크립트 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/modal_tgl_btn.js"></script>
+    <!-- ====스타일 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/login.css">
+    
+</head>
+<body>
+    <div id="wrap">
+        <header class="header">
+            <div class="header_top">
+                <ul class="clearfix">
+                    <li>배송비 무료쿠폰</li>
+                    <li id="coupon_open">쿠폰다운</a></li>
+                </ul>
+            </div>
+            <div class="header_bottom clearfix">
+                
+                    <ul id="header_menu" class="clearfix">
+                        <li class="no_hover" id="close"><img src="images/logo.svg" alt="닫기"></li>
+                        <li><a href="search.html">향수찾기</a></li>
+                        <li><a href="mypage.html">게시판</a></li>
+                        <li><a href="mypage.html">이벤트</a></li>
+                        <li><a href="login.html">마이페이지</a></li>
+                        <li class="no_hover"><img src="images/logo_title.svg" alt=""></li>      
+                    </ul>
+                <nav class="nav ">    
+                    <ul id="tgl_btn">
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                    </ul>
+                </nav>
+            </div>  
+        </header>
+        <section class="banner">
+            <a href="index.html"><img src="images/logo_w.svg" alt="로고03"> </a>
+        </section>
+        <section class="login" class="clearfix">
+            <div class="login_txt">
+                <h2>Log-in</h2>
+                <input id="id" type="text" placeholder="아이디(ID)">
+                <input id="pw" type="password" placeholder="비밀번호(PW)" >
+            </div>
+            <div class="login_save">
+                <input type="checkbox" id="auto_login">
+                <label for="auto_login">자동로그인</label>
+            </div>
+            <div id="login_padding" class="clearfix">
+                <div class="login_sns">
+                    <a href="https://www.kakaocorp.com/"><img src="images/icon01.png" alt="카카오톡"></a>
+                    <a href="https://ko-kr.facebook.com/"><img src="images/icon02.png" alt="페이스북"></a>
+                    <a href="https://www.instagram.com/"><img src="images/icon03.png" alt="인스타그램"></a>
+                </div>
+                <div class="login_check" class="clearfix">
+                    <a href="index.html"><img src="images/check.svg" alt="확인버튼"></a>
+                </div>
+            </div>
+            <div class="login_btn" class="clearfix">
+                <a href="#"><img src="images/id_pw.png" alt="아디패스워드찾기"></a>
+                <a href="#"><img src="images/join.png" alt="회원가입"></a>
+            </div>
+        </section>
+        <footer class="footer">
+           <div>
+                <a href="index.html">
+                    <img src="images/logo_title_w.svg" alt="로고02">
+                </a>
+           </div>
+           <div>
+               <p>서울시 관악구 신림로64길<br>
+            고객문의 adc123@gmail.com / 02-123-4567<br>
+            COPYRIGHT ⓒ 2019 LIKEAFAIRY KOREA ALL RIGHT RESERVED</p>
+        </p>
+           </div>
+        </footer>  
+    </div>
+    <!-- ====modal 시작==== -->
+    <div class="container">
+        <div class="modal">
+           <div id="cou_d">쿠폰 다운 완료</div>
+           <div id="cou_x">닫기</div>
+        </div>
+    </div>
+    <!-- ====modal 끝==== -->
+</body>
+</html>

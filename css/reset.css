@@ -8,14 +8,16 @@ font-family: 'Nanum Gothic', sans-serif; */
 .clearfix::after{display: block;content: "";clear: both;}
 ul,li,ol{list-style: none;}
 a{text-decoration: none;color: black;}
-body,header,section,nav,aside,footer,address,div,span,img,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,a,figure,figcaption{
+body,header,section,nav,aside,footer,address,div,span,img,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,a,figure,figcaption,p{
     margin:0;
     padding:0;
     border:none;
     box-sizing:border-box;
+    font-size: 12px;
 }
 form,button,input,select,option{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
+

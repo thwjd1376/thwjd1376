@@ -1,0 +1,27 @@
+$(function(){ 
+    // 토글
+    $('#tgl_btn').on('click',function(){
+        $('#header_menu').css({right:0,opacity:1});
+    })
+    $('#close').on('click',function(){
+        $('#header_menu').css({right:'-50%',opacity:0});
+    })
+
+    $(window).resize(function(){
+        if($(window).width()>=960){
+            $('#header_menu').css({opacity:1});
+        }else{
+
+        }
+    })
+    // ==쿠폰모달
+  $('.container').hide();
+  $('#coupon_open').on('click',function(){
+      $('#wrap').css('opacity','0.5');
+      $('.container').show();
+  });
+  $('#cou_x').on('click',function(){
+      $('#wrap').css('opacity','1');
+      $('.container').hide();
+  })
+});

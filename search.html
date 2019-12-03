@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LIKE A FAIRY</title>
+    <!-- ====파비콘 -->
+    <link rel="shortcut icon" href="images/favicon01.png">
+    <link rel="apple-touch-icon-precomposed" href="images/favicon01.png">
+    
+    <!-- ====폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800|Noto+Serif+KR:200,300,400,500,600,700,900&display=swap&subset=korean" rel="stylesheet">
+    
+    <!-- =====스크립트 -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/modal_tgl_btn_search.js"></script>
+    <script src="js/search.js"></script>
+
+    <!-- ====스타일 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/search.css">
+    
+</head>
+<body>
+    <div id="wrap" class="clearfix">
+            <header class="header">
+                <div class="header_top">
+                    <ul class="clearfix">
+                        <li class="notice_sns_txt">배송비 무료쿠폰</li>
+                        <li class="notice_sns_txt" id="coupon_open">쿠폰다운</li>
+                    </ul>
+                </div>
+                <div class="header_bottom clearfix">
+                    <div class="logo"><a href="index.html"><img src="images/logo_title.svg" alt="로고"></a></div>
+                    <ul id="header_menu" class="clearfix">
+                        <li class="no_hover" id="close"><img src="images/logo.svg" alt="닫기"></li>
+                        <li><a href="search.html">향수찾기</a></li>
+                        <li><a href="mypage.html">게시판</a></li>
+                        <li><a href="mypage.html">이벤트</a></li>
+                        <li><a href="login.html">마이페이지</a></li>
+                        <li class="no_hover"><img src="images/logo_title.svg" alt=""></li>
+                    </ul>
+                    <nav class="nav ">
+                        <ul id="tgl_btn">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <section class="banner">
+        <div>
+            <img id="banner02" src="images/search_banner.png" alt="배너사진">
+        </div>
+        <div>
+            <img id="logo02" src="images/logo_w.svg" alt="로고">
+            <div id="banner_txt">
+                <p id="kr">어떤 느낌의 향수를 선호하시나요 ?</p>
+                <p id="eng">What kind of perfume do you like ?</p>
+            </div>
+        </div>
+        </section>
+        <section class="perfume clearfix">
+            <ul class="clearfix">
+                <li class="clearfix">
+                    <img id="modal_btn01" src="images/citrus.png" alt="시트러스">
+                    <p class="name">Citrus</p>
+                    <p class="kname">시트러스</p>
+                </li>
+                <li id="modal_btn02" class="clearfix">
+                    <img src="images/floral.png" alt="플로럴">
+                    <p class="name">Floral</p>
+                    <p class="kname">플로럴</p>
+                </li>
+                <li id="modal_btn03" class="clearfix">
+                    <img src="images/fruity.png" alt="프루티">
+                    <p class="name">Fruity</p>
+                    <p class="kname">프루티</p>
+                </li>
+                <li id="modal_btn04" class="clearfix">
+                    <img src="images/green.png" alt="그린">
+                    <p class="name">Green</p>
+                    <p class="kname">그린</p>
+                </li>
+                <li id="modal_btn05" class="clearfix">
+                    <img src="images/woody.png" alt="우디">
+                    <p class="name">Woody</p>
+                    <p class="kname">우디</p>
+                </li>
+                <li id="modal_btn06" class="clearfix">
+                    <img src="images/musk.png" alt="머스크">
+                    <p class="name">Musk</p>
+                    <p class="kname">머스크</p>
+                </li>            
+            </ul>
+        </section>
+
+        <footer class="footer">
+           <div>
+                <a href="index.html">
+                    <img src="images/logo_title_w.svg" alt="로고02">
+                </a>
+           </div>
+           <div>
+               <p>서울시 관악구 신림로64길<br>
+                고객문의 adc123@gmail.com / 02-123-4567<br>
+                COPYRIGHT ⓒ 2019 LIKEAFAIRY KOREA ALL RIGHT RESERVED</p>
+           </div>
+        </footer>
+        <div id="container" class="container01">
+            <div class="modal">
+                <h2>CITRUS</h2>
+                <p>레몬, 오렌지, 자몽같은 상큼한 감귤류향</p>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf01.png" alt="프레시"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">프레쉬</p>
+                        <p class="pf_name">Fresh Life Eau de Parfum</p>
+                    </li>
+                </ul>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf02.png" alt="조말론"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">조말론</p>
+                        <p class="pf_name">Lime Basil & Mandarin</p>
+                    </li>
+                </ul>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf03.png" alt="록시땅"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">록시땅</p>
+                        <p class="pf_name">Verveine Eau De Toilette</p>
+                    </li>
+                </ul>   
+                <a href="#"><p>향수 더 알아보기</p></a>
+                <h4 class="modal_close_btn"><img src="images/back.png" alt="뒤로가기"></h4>
+            </div>
+        </div>
+        <div id="container" class="container02">
+            <div class="modal">
+                <h2>FLORAL</h2>
+                <p>장미, 프리지아, 라일락, 자스민 같은 화사하고 부드러운 꽃 향</p>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_floral01.png" alt="구찌"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">구찌</p>
+                        <p class="pf_name">Gucci Bloom Eau de Parfum</p>
+                    </li>
+                </ul>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_floral02.png" alt="랑콤"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">랑콤</p>
+                        <p class="pf_name">Miracle Lancome</p>
+                    </li>
+                </ul>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_floral03.png" alt="베라왕"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">베라왕</p>
+                        <p class="pf_name">Princess</p>
+                    </li>
+                </ul>   
+                <a href="#"><p>향수 더 알아보기</p></a>
+                <h4 class="modal_close_btn"><img src="images/back.png" alt="뒤로가기"></h4>
+            </div>
+        </div>
+        <div id="container" class="container03">
+            <div class="modal">
+                <h2>FRUITY</h2>
+                <p>사과, 복숭아, 딸기처럼 달콤하고 친근감을 더하는 과일 향</p>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_fruity01.png" alt="페라가모"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">페라가모</p>
+                        <p class="pf_name">Incanto Charms</p>
+                    </li>
+                </ul>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_fruity02.png" alt="모스키노"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">모스키노</p>
+                        <p class="pf_name">Pink Bouquet</p>
+                    </li>
+                </ul>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_fruity03.png" alt="마크 제이콥스"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">마크 제이콥스</p>
+                        <p class="pf_name">Daisy Dream</p>
+                    </li>
+                </ul>   
+                <a href="search.html"><p>향수 더 알아보기</p></a>
+                <h4 class="modal_close_btn"><img src="images/back.png" alt="뒤로가기"></h4>
+            </div>
+        </div>
+        <div id="container" class="container04">
+            <div class="modal">
+                <h2>GREEN</h2>
+                <p>풀, 나뭇잎, 이끼를 연상시키게 하는 향</p>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_green01.png" alt="샤넬"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">샤넬</p>
+                        <p class="pf_name">Chanel No. 19</p>
+                    </li>
+                </ul>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_green02.png" alt="발망"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">발망</p>
+                        <p class="pf_name">Vent Vert</p>
+                    </li>
+                </ul>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_green03.png" alt="겐조"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">겐조</p>
+                        <p class="pf_name">D'ete</p>
+                    </li>
+                </ul>   
+                <a href="search.html"><p>향수 더 알아보기</p></a>
+                <h4 class="modal_close_btn"><img src="images/back.png" alt="뒤로가기"></h4>
+            </div>
+        </div>
+        <div id="container" class="container05">
+            <div class="modal">
+                <h2>WOODY</h2>
+                <p>건조한 목재, 나무껍질, 나무뿌리에서 느껴지는 침착하고 깊은 향</p>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_woody01.png" alt="디올"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">디올</p>
+                        <p class="pf_name">Fahrenheit Dior</p>
+                    </li>
+                </ul>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_woody02.png" alt="겐조"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">겐조</p>
+                        <p class="pf_name">L'Eau Par Kenzo</p>
+                    </li>
+                </ul>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_woody03.png" alt="겔랑"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">겔랑</p>
+                        <p class="pf_name">Heritage Guerlain</p>
+                    </li>
+                </ul>   
+                <a href="search.html"><p>향수 더 알아보기</p></a>
+                <h4 class="modal_close_btn"><img src="images/back.png" alt="뒤로가기"></h4>
+            </div>
+        </div>
+        <div id="container" class="container06">
+            <div class="modal">
+                <h2>MUSK</h2>
+                <p>모든 향을 부드럽게 감싸안는 관능적이고 따뜻한 향</p>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_musk01.png" alt="더바디샵"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">더바디샵</p>
+                        <p class="pf_name">White Musk</p>
+                    </li>
+                </ul>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_musk02.png" alt="불가리"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">불가리</p>
+                        <p class="pf_name">BVLGARI femme</p>
+                    </li>
+                </ul>
+                <ul class="clearfix">
+                    <li id="pf_img" class="clearfix">
+                        <a href="#"><img src="images/pf_musk03.png" alt="키엘"></a>
+                    </li>
+                    <li class="pf_txt clearfix">
+                        <p class="pf_tit">키엘</p>
+                        <p class="pf_name">Original Musk</p>
+                    </li>
+                </ul>   
+                <a href="search.html"><p>향수 더 알아보기</p></a>
+                <h4 class="modal_close_btn"><img src="images/back.png" alt="뒤로가기"></h4>
+            </div>
+        </div>
+    </div>   
+</body>
+<div class="container_07">
+    <div class="modal_01">
+        <div id="cou_d">쿠폰 다운 완료</div>
+        <div id="cou_x">닫기</div>
+    </div>
+</div>
+</html>

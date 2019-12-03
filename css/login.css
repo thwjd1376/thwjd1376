@@ -1,0 +1,121 @@
+#wrap{position: relative;max-width: 1280px;margin: 0 auto;}
+.header_top{background: #75786d;width: 100%; padding: 5px 15px;}
+.header_top>ul>li:first-child{float: left;color: white;font-size:12px;font-weight: bold;padding: 5px 0;}
+.header_top>ul>li:last-child{float: right;font-size:12px;font-weight: bold;background: #f0ebe5;border-radius: 5px;padding: 5px 14px;}
+.header_top>ul>li:last-child>a{color:#75786d;}
+.header_bottom{padding:15px;background: #75786d;}
+.header_bottom>.nav>#header_menu{display: none;}
+.header_bottom>.nav>#tgl_btn{float: right;cursor: pointer;}
+.header_bottom>.nav>#tgl_btn>li{height: 2px;width: 30px;background:#fff;margin: 8px 15px 8px 0px;text-indent: -99999px;}
+.header_bottom>.nav>#tgl_btn>li:first-child{margin-top: 0;}
+.header_bottom>.nav>#tgl_btn>li:last-child{margin-bottom: 0;}
+.banner{background: #75786d;text-align: center;padding-bottom: 50px;}
+.banner>a>img{width:24%;}
+.header_bottom>#header_menu{font-family: 'Noto Serif KR', serif;position: fixed;right:-50%;top:0;text-align:center;background: white;width:50%;height: 100%;z-index: 10;transition: 0.5s;opacity:0;}
+.header_bottom>#header_menu>li{padding: 20px 10px;cursor: pointer;}
+.header_bottom>#header_menu>li:hover{background: #75786d;}
+.header_bottom>#header_menu>li:hover>a{color:#fff;}
+.header_bottom>#header_menu>.no_hover:hover{background:none;cursor:auto;}
+.header_bottom>#header_menu>li:first-child{border-bottom: 1px solid #75786d;padding-bottom:30px;margin-bottom: 20px;}
+.header_bottom>#header_menu>li:first-child>img{width: 50%}
+.header_bottom>#header_menu>li>a{font-size: 16px;font-weight: 400;}
+.header_bottom>.nav>#tgl_btn{float: right;cursor: pointer;}
+.header_bottom>#header_menu>li:last-child>img{width:80%;opacity: 0.5;}
+
+.login{background:#f0ebe5;font-family: 'Noto Serif KR', serif;}
+.login>.login_txt>h2{font-size:30px;font-weight:bolder;text-align: center;color:#20231c;padding:60px 0 35px;}
+.login>.login_txt>input{display:block;width:50%;margin:15px auto;padding:10px 0;border:none;border-bottom:2px solid #20231c;background:#d2cdc7;}
+.login>.login_txt>input::placeholder{font-size:12px;color:gray;padding:8px;font-family: 'Noto Serif KR', serif;}
+.login>.login_txt>input#id{margin-top:0;}
+.login>.login_txt>input#pw{margin-bottom:0;}
+.login>.login_save{width:50%;margin-left:25%;padding:5px 0;}
+.login>.login_save>label{font-size:14px;font-weight:bold;}
+.login .login_sns{text-align:center;margin:15px 0;}
+.login .login_sns>a{width:30px;height:30px;display: inline-block;}
+.login .login_sns img{width:100%;}
+.login .login_check{text-align:center;}
+.login>.login_btn{width:50%;margin:0 auto;display: flex;justify-content: space-between;}
+.login>.login_btn img{padding: 20px 0;}
+
+footer.footer{background: #75786d;width: 100%;padding: 10px 0;}
+footer.footer>div{text-align: center;}
+footer.footer>div:last-child{padding-top:4px;}
+footer.footer>div>a>img{width: 35%;}
+footer.footer>div>p{font-size: 12px;color: #20231c;}  
+ /* ==모달스타일 */
+ .modal{width: 70%;background: rgba(255,255,255,0.7);position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:1001;padding: 10px 0;border-radius: 10px;}
+.modal>div{text-align: center;padding:10px 0;font-family: 'Noto Serif KR', serif;margin: 0 auto;}
+.modal>div#cou_d{font-size: 1.5em;padding:20px 0;}  
+.modal>div#cou_x{font-size: 1.1em;background:#75786d ;width: 40%;border-radius: 10px;color: #fff;}
+
+@media(min-width:640px){
+    .header_top{padding: 10px 30px;}
+    .header_bottom{padding:0px;}
+    .header_bottom>#header_menu>li>a{font-size: 18px;}
+    .header_bottom>#header_menu>li:last-child>img{width:60%;}
+    .header_bottom>.nav>#tgl_btn>li{height: 3px;width: 35px;margin: 10px 17px 10px 0px;}
+    .header_bottom>.nav>#tgl_btn>li:first-child{margin-top: 10px;}
+    .header_bottom>.nav>#tgl_btn>li:last-child{margin-bottom: 10px;}
+    .header_top>ul>li:first-child{font-size:16px;}
+    .header_top>ul>li:last-child>a{font-size:16px;}
+    .banner{background: #75786d;text-align: center;padding-bottom: 20px;}
+     .banner>a>img{width:20%;}
+    .login>.login_save{margin:0 auto;width: 70%;text-align: left;padding: 10px 0;}
+    .login>.login_txt>h2{font-size:40px;}
+    .login>.login_txt>input{width:70%;margin:30px auto;padding:15px 0;}
+    .login>.login_txt>input::placeholder{font-size:16px;}
+    .login>.login_save>label{font-size:18px;}
+    #login_padding{width: 70%;margin: 0 auto;}
+    .login .login_sns{width:65%; float: left;text-align: left;}
+    .login .login_sns>a{width:20%;display: inline-block;}
+    .login .login_sns>a>img{width:100%;}
+    .login .login_check{float: right;width: 15%;padding-bottom:0;margin: 20px 0;}
+    .login .login_check>a>img{width:100%;}
+    .login>.login_btn{width: 70%;}
+    .login>.login_btn img{width: 15vw;}
+
+    /* ==푸터스타일 */
+    footer.footer{padding:20px;}
+
+    /* ==모달스타일 */
+    .modal{width: 50%;}
+    .modal>div#cou_d{padding:20px 0;}
+ }       
+
+@media(min-width:960px){     
+    /* ==토글 없애기 헤더*/
+    #wrap{position: static;}
+    .header_bottom{padding: 0px;border-bottom:2px solid #75786d;}
+    .header_bottom>.logo{width: 100%;text-align: center;padding:20px;}  
+    .header_bottom>.logo>a>img{width: 30%;margin:50px 10px 10px 10px;}
+    .header_bottom>#header_menu{position: static; width:100%;transition: none;opacity: 1;transform: none;background:  none;}
+    .header_bottom>#header_menu>li{float: left;width: 25%; padding:10px 0;cursor: pointer;}
+    .header_bottom>#header_menu>li:hover{background: none;}
+    
+    .header_bottom>#header_menu>li>a{font-size: 20px;color:#fff;}
+    .header_bottom>#header_menu>li.no_hover{display: none;}
+    .header_bottom>.nav>#tgl_btn{display: none;}  
+    
+    .header_bottom{padding:0;}
+    .banner{background: #75786d;text-align: center;padding-bottom: 50px;}
+    .banner>a>img{width:12%;}
+    .login>.login_txt>input{width:50%;margin:30px auto;}
+    .login>.login_txt>h2{font-size:30px;padding:20px 0 35px;}
+    .login>.login_save{width: 50%;}
+    #login_padding{width: 50%;}
+    .login>.login_btn{width: 50%;}
+    .login>.login_btn img{width: 7vw;}
+    
+
+     /* //푸터스타일 */
+
+    footer.footer{text-align: center;padding:30px;}
+    footer.footer>div{ display: inline-block;vertical-align: middle;}
+    footer.footer>div:last-child{padding-top:0px; text-align: left;}
+    footer.footer>div>a>img{width:70%;}
+    footer.footer>div>p{font-size:16px;}
+    /* ==모달스타일 */
+    .modal{width: 30%;}
+    .modal>div#cou_d{padding:30px 0;}
+    
+}  
